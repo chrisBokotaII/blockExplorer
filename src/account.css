@@ -1,0 +1,89 @@
+.account {
+  width: 90%;
+}
+form {
+  width: 70%;
+}
+
+form input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  border-radius: 10rem;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  overflow: hidden;
+  border: none;
+  margin: 1rem auto;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 80%;
+  background-color: rgb(212, 217, 217);
+}
+form button {
+  border-radius: 10rem;
+  background-image: linear-gradient(
+    135deg,
+    rgb(34, 189, 220) 10%,
+    rgb(255, 255, 255) 100%
+  );
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  margin: 1rem 3rem;
+  width: 30%;
+  text-align: center;
+  background-color: rgb(212, 217, 217);
+  cursor: pointer;
+  -webkit-animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+
+form input:focus {
+  outline: none;
+  border: none;
+}
+
+form input::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem;
+  color: green;
+}

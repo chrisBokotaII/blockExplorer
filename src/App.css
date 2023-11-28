@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: #f5f6f7;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+  width: 100%;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+.shwow {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.transactions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 10px;
+  background-color: #d8d8d8;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  scroll-behavior: smooth;
+  overflow: auto;
+  min-height: 400px;
+  max-height: 400px;
+}
+.transaction {
+  padding: 10px;
+  cursor: pointer;
+}
+.blockNumber {
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+.receipt {
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 3rem auto;
+  padding: 10px;
+  background-color: #121111;
+  color: green;
+  border-radius: 5px;
+  font-size: 12px;
+  scroll-behavior: smooth;
+  overflow: auto;
+  min-height: 400px;
+  max-height: 400px;
+  width: 80%;
+}
+.receipt strong {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.receipt ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 10ch;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.receipt ul li {
+  margin-bottom: 5px;
+}
+.receipt ul li:last-child {
+  margin-bottom: 0;
+}
+.clickedTransaction p {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+h2 {
+  color: white;
+  text-align: center;
 }
